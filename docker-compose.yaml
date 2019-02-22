@@ -1,0 +1,18 @@
+
+version: '3.1'
+
+services:
+  ws-react-ui:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    container_name: ws-react-redux-ui-container
+    image: local/ws-react-redux-ui-dev:latest
+    volumes:
+      - .:/app
+      - /app/node_modules
+    tty: true
+    ports:
+      - "3000:3000"
+    env_file: .env.localdev
+    command: ["yarn", "run", "start"]

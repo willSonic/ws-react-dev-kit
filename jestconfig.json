@@ -1,0 +1,15 @@
+{
+  "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(jsx|js)$",
+  "moduleFileExtensions": ["jsx", "js", "json"],
+  "moduleDirectories": ["node_modules", "src", "<rootDir>/../agile-ui/.."],
+  "moduleNameMapper": {
+    "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|pem)$": "<rootDir>/__mocks__/fileMock.js",
+    "^react$": "<rootDir>/src/__compat__/react.js"
+  },
+  "setupFiles": ["jest-localstorage-mock", "<rootDir>/__mocks__/testSetup.js"],
+  "transformIgnorePatterns": ["/node_modules/(?!agile-ui)"],
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true,
+  "testURL": "http://localhost"
+}

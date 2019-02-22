@@ -1,0 +1,58 @@
+### Environment Configuration Files ###
+/.env
+
+### Build Target ###
+/dist
+/lint-report-client.html
+/lint-report-server.html
+/bundle-report-client.html
+
+### Package/Library ###
+/node_modules/
+
+### WebStorm ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
+.idea
+.idea/workspace.xml
+.idea/tasks.xml
+
+# Sensitive or high-churn files:
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# Gradle:
+.idea/gradle.xml
+.idea/libraries
+
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+
+
+
+# DS_store files
+/.DS_Store/
+/npm-debug.log
+.DS_Store
+
+# jest test coverage
+coverage/
+
+#yarn.lock file
+#yarn.lock
+yarn-error.log
+
+
+.directory
