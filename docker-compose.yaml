@@ -1,5 +1,5 @@
 
-version: '3.1'
+version: '3.5'
 
 services:
   ws-react-ui:
@@ -9,10 +9,8 @@ services:
     container_name: ws-react-redux-ui-container
     image: local/ws-react-redux-ui-dev:latest
     volumes:
-      - .:/app
-      - /app/node_modules
-    tty: true
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
     ports:
       - "3000:3000"
     env_file: .env.localdev
-    command: ["yarn", "run", "start"]
